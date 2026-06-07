@@ -1,0 +1,107 @@
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 40px 20px;
+  text-align: center;
+
+  background: linear-gradient(
+    -45deg,
+    #0b6623,
+    #1e3c72,
+    #2a5298,
+    #11998e,
+    #38ef7d
+  );
+
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#login {
+  max-width: 300px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  border-radius: 12px;
+}
+
+#login input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 8px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+}
+
+#login-message {
+  min-height: 20px;
+  color: #ffd700;
+}
+
+#players {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#players h1 {
+  font-size: 20px;
+  margin: 20px 0 10px;
+}
+
+#player-cards,
+#computer-cards {
+  min-height: 130px;
+  margin-bottom: 20px;
+}
+
+img.player-cards {
+  width: 90px;
+  margin: 5px;
+  vertical-align: middle;
+  border-radius: 6px;
+}
+
+button {
+  background-color: white;
+  color: #0b6623;
+  border: none;
+  padding: 10px 18px;
+  margin: 5px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffd700;
+}
+
+#pott {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#bet-input {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  width: 140px;
+}
